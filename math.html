@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aconteceu? Tá na rede!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+</head>
+<body>
+
+	<div id="area-cabecalho">
+		
+		<div id="area-logo">
+			<h1>NA <span class="branco">REDE</span></h1>
+		</div>
+		<div id="area-menu">
+			<a href="index.html">Notícias</a>
+			<a href="https://www.espn.com.br/">Esportes</a>
+			<a href="https://www.vagalume.com.br/news/">Música</a>
+			<a href="https://24h.com.br/ultimas/">24HR</a>
+			<a href="https://www.youtube.com/@FlowPodcast">Podcasts</a>
+			<a href="contact.html">Contato</a>
+			<a href="more-info.html">Saiba Mais</a>
+		</div>
+
+	</div>
+
+	<div id="area-principal">
+
+		<div id="area-postagens">
+			
+			<!-- abertura postagem -->
+			<div class="postagem">
+				<h2>Tabuada</h2>
+				<form>
+					<label for="num">Número:</label>
+					<input type="number" id="num" required>
+					<br><br>
+					<label for="op">Operação:</label>
+					<select id="op">
+					<option value="+">Adição</option>
+					<option value="-">Subtração</option>
+					<option value="*">Multiplicação</option>
+					<option value="/">Divisão</option>
+					</select>
+					<br><br>
+					<button type="button" onclick="generateTabuada()">Gerar Tabuada</button>
+					<div id="result"></div>
+				</form>
+			</div><!--// fechamento postagem -->
+
+		</div>
+		<div id="area-lateral">
+
+			<div class="conteudo-lateral">
+				<h3>Postagens recentes</h3>
+				
+				<div class="postagem-lateral">
+					<p>TCE determina que Câmara do Recife demita 189 comissionados e abra concurso público; menos de 10% dos servidores são concursados</p>
+					<a href="https://g1.globo.com/pe/pernambuco/noticia/2024/02/21/tce-determina-que-camara-do-recife-demita-comissionados-e-abra-concurso-publico.ghtml">Leia mais</a>
+				</div>
+
+				<div class="postagem-lateral" style="border-bottom: none;">
+					<p>Motorista de ônibus leva mordida e socos de passageiro após parar coletivo fora do ponto de embarque</p>
+					<a href="https://g1.globo.com/pe/pernambuco/noticia/2024/02/21/motorista-de-onibus-leva-mordida-e-socos-de-passageiro-apos-parar-coletivo-fora-do-ponto-de-embarque.ghtml">Leia mais</a>
+				</div>
+
+			</div>
+
+			<div class="conteudo-lateral">
+				<h3>Em Alta</h3>
+				
+				<ul>
+					<li>
+						<a href="">Jogos e Consoles</a>
+					</li>
+					<li>
+						<a href="tables.html">Estaduais</a>
+					</li>
+					<li>
+						<a href="">IPVA 2024</a>
+					</li>
+					<li>
+						<a href="">Guerra da Ucrânia</a>
+					</li>
+					<li>
+						<a href="math.html">Operações</a>
+					</li>
+				</ul>
+				
+			</div>
+
+		</div>
+
+		<div id="rodape">
+			Todos os direitos reservados ®
+		</div>
+
+	</div>
+
+	<script src="../JS/script.js"></script>
+	<audio preload="auto" autoplay loop>
+		<source src="../Sounds/uplifting.wav" type="audio/wav">
+	</audio>
+</body>
+</html>
